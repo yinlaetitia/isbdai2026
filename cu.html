@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us - ISBDAI 2026</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="2026 5th International Symposium on Big Data and Artificial Intelligence: For Education Transformation (2026 ISBDAI)" name="keywords">
+    <meta content="Contact information for ISBDAI 2026 conference" name="description">
+
+    <!-- Favicons -->
+    <link href="img/page/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="libinfo/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="libinfo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libinfo/animate0/animate.min.css" rel="stylesheet">
+    <link href="libinfo/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="libinfo/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="libinfo/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Contact Cards */
+        .contact-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 992px) {
+            .contact-cards {
+                flex-direction: column;
+                align-items: center;
+                max-width: 500px;
+            }
+        }
+
+        .contact-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 8px 40px rgba(15, 23, 36, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #c9a962, #e8d5a3);
+            transform: scaleX(0);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(15, 23, 36, 0.12);
+        }
+
+        .contact-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .contact-card-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #0f1724 0%, #1a2634 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: all 0.4s ease;
+        }
+
+        .contact-card:hover .contact-card-icon {
+            background: linear-gradient(135deg, #c9a962 0%, #e8d5a3 100%);
+        }
+
+        .contact-card-icon i {
+            font-size: 1.75rem;
+            color: #c9a962;
+            transition: color 0.4s ease;
+        }
+
+        .contact-card:hover .contact-card-icon i {
+            color: #0f1724;
+        }
+
+        .contact-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0f1724;
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-card p {
+            color: #5a6a7a;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+        }
+
+        .contact-card a {
+            color: #c9a962;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-card a:hover {
+            color: #0f1724;
+        }
+
+        .contact-card a i {
+            font-size: 0.85rem;
+        }
+
+        /* Additional Info Section */
+        .info-section {
+            max-width: 800px;
+            margin: 4rem auto 0;
+            text-align: center;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #0f1724 0%, #1a2634 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            color: #fff;
+        }
+
+        .info-box h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .info-box p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-box .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #c9a962;
+            color: #0f1724;
+            padding: 0.875rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .info-box .cta-btn:hover {
+            background: #e8d5a3;
+            transform: translateY(-2px);
+        }
+
+        /* Quick Links */
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .quick-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .quick-link:hover {
+            color: #c9a962;
+        }
+
+        .quick-link i {
+            font-size: 0.85rem;
+            color: #c9a962;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header - Conference Style Navigation -->
+    <header id="header" class="header-scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/page/logo.png" alt="ISBDAI Logo" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down">
+                        <a href="#">Calls</a>
+                        <ul>
+                            <li><a href="cfp.html">Call for Papers</a></li>
+                            <li><a href="cfw.html">Call for Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#">Program</a>
+                        <ul>
+                            <li><a href="cp.html">Conference Program</a></li>
+                            <li><a href="keynotes.html">Keynotes</a></li>
+                            <li><a href="Workshops.html">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sr.html">Submission</a></li>
+                    <li><a href="vi.html">Venue</a></li>
+                    <li><a href="committees.html">Organization Committees</a></li>
+                    <li class="drop-down">
+                        <a href="#">History</a>
+                        <ul>
+                            <li><a href="history.html">ISBDAI History</a></li>
+                            <li><a href="bpa.html">Best Paper Awards</a></li>
+                            <li><a href="past-keynotes.html">Past Keynotes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cu.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!--==========================
+          Page Header with Image Carousel
+        ============================-->
+        <div class="page-header">
+            <div class="page-header-carousel">
+                <div class="page-header-slide active" style="background-image: url('img/page/polyu.jpg');"></div>
+                <div class="page-header-slide" style="background-image: url('img/page/polyu2.jpg');"></div>
+                <div class="page-header-slide" style="background-image: url('img/page/polyu3.jpg');"></div>
+                <div class="page-header-overlay"></div>
+            </div>
+            <div class="container">
+                <h1 class="page-title wow fadeInUp">Contact Us</h1>
+                <p class="page-subtitle wow fadeInUp" data-wow-delay="0.1s">Get in touch with the ISBDAI 2026 organizing committee</p>
+            </div>
+        </div>
+
+        <!--==========================
+          Contact Section
+        ============================-->
+        <section style="padding: 80px 0; background: #f8f9fb;">
+            <div class="container">
+
+                <div class="contact-cards">
+                    <div class="contact-card wow fadeInUp">
+                        <div class="contact-card-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <h3>Secretary Email</h3>
+                        <p>For general inquiries about the conference, submissions, and registration.</p>
+                        <a href="mailto:littledune@ieti.net">
+                            littledune@ieti.net
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-section wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="info-box">
+                        <h3>Ready to Submit Your Research?</h3>
+                        <p>Join researchers and practitioners from around the world at ISBDAI 2026. Submit your work on Big Data and Artificial Intelligence in Education Transformation.</p>
+                        <a href="sr.html" class="cta-btn">
+                            <i class="fa fa-file-text"></i>
+                            View Submission Guidelines
+                        </a>
+
+                        <div class="quick-links">
+                            <a href="cfp.html" class="quick-link">
+                                <i class="fa fa-bullhorn"></i>
+                                Call for Papers
+                            </a>
+                            <a href="id.html" class="quick-link">
+                                <i class="fa fa-calendar"></i>
+                                Important Dates
+                            </a>
+                            <a href="ti.html" class="quick-link">
+                                <i class="fa fa-list"></i>
+                                Topics of Interest
+                            </a>
+                            <a href="vi.html" class="quick-link">
+                                <i class="fa fa-map-marker"></i>
+                                Venue Information
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="background: #0f1724; padding: 40px 0;">
+        <div class="container">
+            <div class="copyright" style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                &copy; Copyright <strong style="color: #c9a962;">ISBDAI</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="libinfo/jquery/jquery.min.js"></script>
+    <script src="libinfo/jquery/jquery-migrate.min.js"></script>
+    <script src="libinfo/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libinfo/easing/easing.min.js"></script>
+    <script src="libinfo/mobile-nav/mobile-nav.js"></script>
+    <script src="libinfo/wow/wow.min.js"></script>
+    <script src="libinfo/waypoints/waypoints.min.js"></script>
+    <script src="libinfo/counterup/counterup.min.js"></script>
+    <script src="libinfo/owlcarousel/owl.carousel.min.js"></script>
+    <script src="libinfo/isotope/isotope.pkgd.min.js"></script>
+    <script src="libinfo/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ISBDAI History | ISBDAI 2026</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ISBDAI History, Past Conferences, Academic Conference" name="keywords">
+    <meta content="History of ISBDAI conferences from 2018 to present" name="description">
+
+    <!-- Favicons -->
+    <link href="img/page/favicon.ico" rel="icon">
+    <link href="img/page/favicon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="libinfo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libinfo/animate0/animate.min.css" rel="stylesheet">
+    <link href="libinfo/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Gallery Styles */
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+            margin-bottom: var(--space-xl);
+        }
+        .gallery-filters button {
+            padding: var(--space-sm) var(--space-lg);
+            font-family: var(--font-primary);
+            font-size: var(--text-sm);
+            font-weight: 500;
+            color: var(--color-text);
+            background: var(--color-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        .gallery-filters button:hover,
+        .gallery-filters button.active {
+            background: var(--color-primary);
+            color: var(--color-white);
+            border-color: var(--color-primary);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-lg);
+        }
+        @media (max-width: 767px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            background: var(--color-white);
+            border: 1px solid var(--color-mid-gray);
+            transition: all var(--transition-base);
+        }
+        .gallery-item:hover {
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-8px);
+            border-color: transparent;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item-info {
+            padding: var(--space-lg);
+        }
+        .gallery-item-title {
+            font-size: var(--text-lg);
+            font-weight: 600;
+            color: var(--color-text-dark);
+            margin-bottom: var(--space-xs);
+        }
+        .gallery-item-desc {
+            font-size: var(--text-sm);
+            color: var(--color-text-light);
+            margin: 0;
+        }
+        .gallery-item-link {
+            position: absolute;
+            top: var(--space-md);
+            right: var(--space-md);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            color: var(--color-primary);
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all var(--transition-fast);
+        }
+        .gallery-item:hover .gallery-item-link {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .gallery-item-link:hover {
+            background: var(--color-accent);
+            color: var(--color-white);
+        }
+        .timeline-block {
+            background: var(--color-white);
+            border: 1px solid var(--color-mid-gray);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+        .timeline-block h3 {
+            font-size: var(--text-xl);
+            font-weight: 600;
+            color: var(--color-text-dark);
+            margin-bottom: var(--space-lg);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        .timeline-block h3 i {
+            color: var(--color-accent);
+        }
+        .timeline-item {
+            padding: var(--space-md) 0;
+            border-bottom: 1px solid var(--color-light-gray);
+        }
+        .timeline-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .timeline-item p {
+            font-size: var(--text-base);
+            color: var(--color-text);
+            line-height: var(--leading-relaxed);
+            margin: 0;
+        }
+        .timeline-item a {
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+        .timeline-item a:hover {
+            color: var(--color-accent-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header - Conference Style Navigation -->
+    <header id="header" class="header-scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/page/logo.png" alt="ISBDAI Logo" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down">
+                        <a href="#">Calls</a>
+                        <ul>
+                            <li><a href="cfp.html">Call for Papers</a></li>
+                            <li><a href="cfw.html">Call for Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#">Program</a>
+                        <ul>
+                            <li><a href="cp.html">Conference Program</a></li>
+                            <li><a href="keynotes.html">Keynotes</a></li>
+                            <li><a href="Workshops.html">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sr.html">Submission</a></li>
+                    <li><a href="vi.html">Venue</a></li>
+                    <li><a href="committees.html">Organization Committees</a></li>
+                    <li class="drop-down">
+                        <a href="#">History</a>
+                        <ul>
+                            <li><a href="history.html">ISBDAI History</a></li>
+                            <li><a href="bpa.html">Best Paper Awards</a></li>
+                            <li><a href="past-keynotes.html">Past Keynotes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cu.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header with Image Carousel -->
+    <div class="page-header">
+        <div class="page-header-carousel">
+            <div class="page-header-slide active" style="background-image: url('img/page/polyu.jpg');"></div>
+            <div class="page-header-slide" style="background-image: url('img/page/polyu2.jpg');"></div>
+            <div class="page-header-slide" style="background-image: url('img/page/polyu3.jpg');"></div>
+            <div class="page-header-overlay"></div>
+        </div>
+        <div class="container">
+            <h1 class="page-title">ISBDAI History</h1>
+            <p class="page-subtitle">A legacy of academic excellence since 2018</p>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="page-content">
+            <div class="container">
+                <!-- Filter Buttons -->
+                <div class="gallery-filters wow fadeInUp">
+                    <button class="active" data-filter="*">All</button>
+                    <button data-filter=".filter-2024">2024</button>
+                    <button data-filter=".filter-2022">2022</button>
+                    <button data-filter=".filter-2020">2020</button>
+                    <button data-filter=".filter-2018">2018</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid" id="gallery">
+                    <div class="gallery-item filter-2024 wow fadeInUp" data-wow-delay="0.1s">
+                        <a href="img/history/2024.png" data-lightbox="history" data-title="2024 ISBDAI - Hong Kong University of Science and Technology" class="gallery-item-link">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                        <img src="img/history/2024.png" alt="2024 ISBDAI">
+                        <div class="gallery-item-info">
+                            <h4 class="gallery-item-title">2024 ISBDAI</h4>
+                            <p class="gallery-item-desc">December 14-16, Hong Kong University of Science and Technology</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item filter-2022 wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="img/history/2022.png" data-lightbox="history" data-title="2022 ISBDAI - Singapore" class="gallery-item-link">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                        <img src="img/history/2022.png" alt="2022 ISBDAI">
+                        <div class="gallery-item-info">
+                            <h4 class="gallery-item-title">2022 ISBDAI</h4>
+                            <p class="gallery-item-desc">December 9-10, Singapore</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item filter-2020 wow fadeInUp" data-wow-delay="0.3s">
+                        <a href="img/history/2020.jpg" data-lightbox="history" data-title="2020 ISBDAI - Johannesburg" class="gallery-item-link">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                        <img src="img/history/2020.jpg" alt="2020 ISBDAI">
+                        <div class="gallery-item-info">
+                            <h4 class="gallery-item-title">2020 ISBDAI</h4>
+                            <p class="gallery-item-desc">October 15-16, Johannesburg</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item filter-2018 wow fadeInUp" data-wow-delay="0.4s">
+                        <a href="img/history/2018.png" data-lightbox="history" data-title="2018 ISBDAI - Hong Kong" class="gallery-item-link">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                        <img src="img/history/2018.png" alt="2018 ISBDAI">
+                        <div class="gallery-item-info">
+                            <h4 class="gallery-item-title">2018 ISBDAI</h4>
+                            <p class="gallery-item-desc">April 28-30, Hong Kong</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- History Details -->
+                <div class="timeline-block wow fadeInUp">
+                    <h3><i class="fa fa-history"></i> Conference Timeline</h3>
+
+                    <div class="timeline-item">
+                        <p>2024 4th International Symposium on Big Data and Artificial Intelligence <strong>(ISBDAI 2024)</strong> was held in HongKong (online and onsite) on Dec. 14-16 2024. Participants (online and onsite) are from USA, Austria, Italy, Germany, Switzerland, Netherlands, Kazakhstan, Cyprus, Romania, Australia, Thailand, Pakistan, Malaysia, Uzbekistan, Mainland China, Hong Kong, Macao and etc. Conference Proceedings was published by ACM International Conference Proceedings Series, which was indexed by <a href="img/indexhis/2024ei.png" target="_blank">Ei Compendex</a>, <a href="img/indexhis/2024scopus.png" target="_blank">Scopus</a>, and <a href="https://dl.acm.org/doi/proceedings/10.1145/3723366" target="_blank">ACM Digital Library</a>.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <p>2022 3rd International Symposium on Big Data and Artificial Intelligence <strong>(ISBDAI 2022)</strong> was held in Singapore (online and onsite) on Dec. 9-10 2022. Participants (online and onsite) are from Singapore, Cyprus, New Zealand, UK, USA, Italy, Romania, Australia, Thailand, Pakistan, Portugal, Mainland China, Hong Kong and etc. Conference Proceedings was published by ACM International Conference Proceedings Series, which was indexed by <a href="img/indexhis/2022ei.png" target="_blank">Ei Compendex</a>, <a href="img/indexhis/2022scopus.png" target="_blank">Scopus</a>, and <a href="https://dl.acm.org/doi/proceedings/10.1145/3598438" target="_blank">ACM Digital Library</a>.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <p>2020 2nd International Symposium on Big Data and Artificial Intelligence <strong>(ISBDAI 2020)</strong> was held in Johannesburg on October 15 - 16 2020. Participants (online) are from Democratic Republic Congo, UK, USA, Italy, Romania, Australia, Cyprus, South Africa, Mainland China, Hong Kong and etc. Conference Proceedings was published by ACM International Conference Proceedings Series, which was indexed by <a href="img/indexhis/2020ei.jpg" target="_blank">Ei Compendex</a>, <a href="img/indexhis/2020scopus.jpg" target="_blank">Scopus</a>, and <a href="https://dl.acm.org/doi/proceedings/10.1145/3436286" target="_blank">ACM Digital Library</a>.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <p>2018 International Symposium on Big Data and Artificial Intelligence <strong>(ISBDAI 2018)</strong> was held in Hong Kong on Dec 29 - 30 2018 (and also we have a parallel session in Guilin). Participants are from South Africa (University of Johannesburg, University of South Africa), Taiwan (Center for High Performance Computing), Hong Kong (Hong Kong Shue Yan University), Changsha (Changsha University of Technology), Beijing (Tsinghua University), Chengdu (Tencent), Guilin (Guilin University of Technology), Jinan (Shandong University of Finance and Economics), Japan (Ehime university, Meiji University), Kazakhstan (Eurasian National University), Malaysia (INWASCON), South Korea (Kunsan National University, Busan University of Foreign Studies), Sweden (56 Digital), USA (IDSAI) and etc. Conference Proceedings was published by ACM International Conference Proceedings Series, which was indexed by <a href="img/indexhis/2018ei.png" target="_blank">Ei Compendex</a>, <a href="img/indexhis/2018scopus.png" target="_blank">Scopus</a>, <a href="https://dl.acm.org/doi/proceedings/10.1145/3305275" target="_blank">ACM Digital Library</a>, and <a href="img/indexhis/2018cpci.png" target="_blank">CPCI / Web of Science</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item wow fadeInUp">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Secretary Email</h4>
+                            <p>littledune@ieti.net</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="contact-icon">
+                            <i class="fa fa-paper-plane-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Submission Link</h4>
+                            <p><a href="https://www.conftool.com/isbdai2026/" target="_blank">Conftool Portal</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Conference Website</h4>
+                            <p><a href="https://www.ieti.net/conf/isbdai/index.html" target="_blank">ieti.net/conf/isbdai</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="background: #0f1724; padding: 40px 0;">
+        <div class="container">
+            <div class="copyright" style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                &copy; Copyright <strong style="color: #c9a962;">ISBDAI</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="libinfo/jquery/jquery.min.js"></script>
+    <script src="libinfo/jquery/jquery-migrate.min.js"></script>
+    <script src="libinfo/easing/easing.min.js"></script>
+    <script src="libinfo/mobile-nav/mobile-nav.js"></script>
+    <script src="libinfo/wow/wow.min.js"></script>
+    <script src="libinfo/waypoints/waypoints.min.js"></script>
+    <script src="libinfo/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+    <script>
+        // Simple filter functionality
+        document.querySelectorAll('.gallery-filters button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.gallery-filters button').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === '*' || item.classList.contains(filter.substring(1))) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

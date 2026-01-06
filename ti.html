@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Topics of Interest | ISBDAI 2026</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ISBDAI Topics, AI, Big Data, Computer Science, Education" name="keywords">
+    <meta content="Research topics and areas of interest for ISBDAI 2026" name="description">
+
+    <!-- Favicons -->
+    <link href="img/page/favicon.ico" rel="icon">
+    <link href="img/page/favicon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="libinfo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libinfo/animate0/animate.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-lg);
+        }
+        @media (max-width: 991px) {
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .topic-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-mid-gray);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: all var(--transition-base);
+        }
+        .topic-card:hover {
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-accent);
+        }
+        .topic-card-header {
+            padding: var(--space-lg);
+            background: var(--color-cream);
+            border-bottom: 1px solid var(--color-mid-gray);
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+        .topic-card-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-lg);
+            background: var(--color-primary);
+            color: var(--color-white);
+            font-size: var(--text-xl);
+            flex-shrink: 0;
+        }
+        .topic-card:hover .topic-card-icon {
+            background: var(--color-accent);
+        }
+        .topic-card-title {
+            font-size: var(--text-lg);
+            font-weight: 600;
+            color: var(--color-text-dark);
+            margin: 0;
+        }
+        .topic-card-body {
+            padding: var(--space-lg);
+        }
+        .topic-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-xs) var(--space-md);
+        }
+        @media (max-width: 575px) {
+            .topic-list {
+                grid-template-columns: 1fr;
+            }
+        }
+        .topic-list li {
+            font-size: var(--text-sm);
+            color: var(--color-text);
+            padding: var(--space-xs) 0;
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-xs);
+        }
+        .topic-list li::before {
+            content: '';
+            width: 4px;
+            height: 4px;
+            background: var(--color-accent);
+            border-radius: 50%;
+            margin-top: 8px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header - Conference Style Navigation -->
+    <header id="header" class="header-scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/page/logo.png" alt="ISBDAI Logo" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down">
+                        <a href="#">Calls</a>
+                        <ul>
+                            <li><a href="cfp.html">Call for Papers</a></li>
+                            <li><a href="cfw.html">Call for Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#">Program</a>
+                        <ul>
+                            <li><a href="cp.html">Conference Program</a></li>
+                            <li><a href="keynotes.html">Keynotes</a></li>
+                            <li><a href="Workshops.html">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sr.html">Submission</a></li>
+                    <li><a href="vi.html">Venue</a></li>
+                    <li><a href="committees.html">Organization Committees</a></li>
+                    <li class="drop-down">
+                        <a href="#">History</a>
+                        <ul>
+                            <li><a href="history.html">ISBDAI History</a></li>
+                            <li><a href="bpa.html">Best Paper Awards</a></li>
+                            <li><a href="past-keynotes.html">Past Keynotes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cu.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header with Image Carousel -->
+    <div class="page-header">
+        <div class="page-header-carousel">
+            <div class="page-header-slide active" style="background-image: url('img/page/polyu.jpg');"></div>
+            <div class="page-header-slide" style="background-image: url('img/page/polyu2.jpg');"></div>
+            <div class="page-header-slide" style="background-image: url('img/page/polyu3.jpg');"></div>
+            <div class="page-header-overlay"></div>
+        </div>
+        <div class="container">
+            <h1 class="page-title">Topics of Interest</h1>
+            <p class="page-subtitle">Research areas and themes for submission</p>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="page-content">
+            <div class="container">
+                <div class="topics-grid">
+                    <!-- Artificial Intelligence -->
+                    <div class="topic-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="topic-card-header">
+                            <div class="topic-card-icon">
+                                <i class="fa fa-lightbulb-o"></i>
+                            </div>
+                            <h3 class="topic-card-title">Artificial Intelligence</h3>
+                        </div>
+                        <div class="topic-card-body">
+                            <ul class="topic-list">
+                                <li>AL Learning and Education</li>
+                                <li>Artificial Intelligence</li>
+                                <li>Biometric Identification</li>
+                                <li>Biocomputing and Bioinformatics</li>
+                                <li>Computational Intelligence</li>
+                                <li>Cognitive Processing</li>
+                                <li>Computer Vision</li>
+                                <li>Deep learining</li>
+                                <li>Document Recognition and Understanding</li>
+                                <li>Humanoid Robot</li>
+                                <li>Intelligent Information Processing</li>
+                                <li>Intelligent Modeling and Control Theory</li>
+                                <li>Intelligent Vehicle</li>
+                                <li>Intelligent Video Surveillance</li>
+                                <li>Machine Learning</li>
+                                <li>Mass Information Processing</li>
+                                <li>Multimedia Information Processing</li>
+                                <li>Nature Language Processing</li>
+                                <li>Nonlinear System</li>
+                                <li>Pattern Recognition</li>
+                                <li>Quantum Computation and Quantum Information</li>
+                                <li>Space Robot</li>
+                                <li>Speech and Character Recognition</li>
+                                <li>Signal Processing</li>
+                                <li>Unmanned Aircraft</li>
+                                <li>Word Recognition</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Computer Science -->
+                    <div class="topic-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="topic-card-header">
+                            <div class="topic-card-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <h3 class="topic-card-title">Computer Science</h3>
+                        </div>
+                        <div class="topic-card-body">
+                            <ul class="topic-list">
+                                <li>Automation of Circuit Design</li>
+                                <li>Algorithm Design and Complexity Analysis</li>
+                                <li>Computation Theory</li>
+                                <li>Computational Social Science</li>
+                                <li>Computer Algorithm</li>
+                                <li>Computer Architecture</li>
+                                <li>Computer Networking</li>
+                                <li>Computer Graphics</li>
+                                <li>Complex Network</li>
+                                <li>Digital Publishing and Printing</li>
+                                <li>Distributed System</li>
+                                <li>Database System</li>
+                                <li>Data Mining</li>
+                                <li>Digital Image Processing Techniques</li>
+                                <li>Formalization Method</li>
+                                <li>Glyph Computing</li>
+                                <li>Information Processing</li>
+                                <li>Information Security</li>
+                                <li>Knowledge Engineering</li>
+                                <li>Management Science</li>
+                                <li>Modern Control Theory</li>
+                                <li>Nonlinear Science</li>
+                                <li>Nonclassical logic and fuzzy computer systems</li>
+                                <li>Neural Network</li>
+                                <li>Reliability Theory</li>
+                                <li>Software Verification</li>
+                                <li>System Science</li>
+                                <li>Software Engineering</li>
+                                <li>Ubiquitous Computing</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Computing -->
+                    <div class="topic-card wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="topic-card-header">
+                            <div class="topic-card-icon">
+                                <i class="fa fa-cloud"></i>
+                            </div>
+                            <h3 class="topic-card-title">Cloud Computing</h3>
+                        </div>
+                        <div class="topic-card-body">
+                            <ul class="topic-list">
+                                <li>Cloud Computing Architecture and Systems</li>
+                                <li>Cloud Computing Models, Simulations, Designs, and Paradigms</li>
+                                <li>Cloud Management and Operations</li>
+                                <li>Cloud Computing Technologies, Services and Applications</li>
+                                <li>Dynamic Resource Provision and Consuming</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Big Data -->
+                    <div class="topic-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="topic-card-header">
+                            <div class="topic-card-icon">
+                                <i class="fa fa-database"></i>
+                            </div>
+                            <h3 class="topic-card-title">Big Data</h3>
+                        </div>
+                        <div class="topic-card-body">
+                            <ul class="topic-list">
+                                <li>Big Data Architectures</li>
+                                <li>Big Data Learning and Education</li>
+                                <li>Big Data Management</li>
+                                <li>Big Data Models and Algorithms</li>
+                                <li>Big Data Security and Privacy</li>
+                                <li>Big Data in Smart Cities</li>
+                                <li>Big Data Search, Mining, and Visualization</li>
+                                <li>Big Data Technologies, Services and Applications</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Internet of Things -->
+                    <div class="topic-card wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="topic-card-header">
+                            <div class="topic-card-icon">
+                                <i class="fa fa-sitemap"></i>
+                            </div>
+                            <h3 class="topic-card-title">Internet of Things</h3>
+                        </div>
+                        <div class="topic-card-body">
+                            <ul class="topic-list">
+                                <li>3D printing</li>
+                                <li>Architecture for secure and interactive IOT</li>
+                                <li>Context-awareness and Location-awareness</li>
+                                <li>Future of IOT and Big Data</li>
+                                <li>Electronic Technologies for in-vehicle</li>
+                                <li>Internet of Things</li>
+                                <li>Intelligent Infrastructure and Guidance Systems</li>
+                                <li>Intelligent Systems for IOT and Services Computing</li>
+                                <li>Machine to Machine Communications</li>
+                                <li>Mode-to-Mode Systems</li>
+                                <li>Network Design and Architecture</li>
+                                <li>Networking and Communication Protocols</li>
+                                <li>Performance Evaluation and Modeling</li>
+                                <li>Smart City Examples and Case Studies</li>
+                                <li>Sensor Networks, Remote Diagnosis and Development</li>
+                                <li>Social Implications for IOT</li>
+                                <li>Security, Privacy and Trust</li>
+                                <li>Software Architecture and Middleware</li>
+                                <li>Technological focus for Smart Environments</li>
+                                <li>Traffic Theory, Modeling and Simulation</li>
+                                <li>Transportation Management</li>
+                                <li>Transport Safety and Mobility</li>
+                                <li>Vehicle-to-Infrastructure</li>
+                                <li>Vehicle-to-Vehicle</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Web -->
+                    <div class="topic-card wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="topic-card-header">
+                            <div class="topic-card-icon">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <h3 class="topic-card-title">Mobile Web</h3>
+                        </div>
+                        <div class="topic-card-body">
+                            <ul class="topic-list">
+                                <li>Architectures, protocols, and algorithms to cope with mobile & wireless Networks</li>
+                                <li>Algorithms and modeling for tracking and locating mobile users</li>
+                                <li>Broadband access networks</li>
+                                <li>Complexity analysis of algorithms for mobile environments</li>
+                                <li>Cryptography, security and privacy of mobile & wireless networks</li>
+                                <li>Data management on mobile and wireless computing</li>
+                                <li>Distributed algorithms of mobile computing</li>
+                                <li>Energy saving protocols for ad hoc and sensor networks</li>
+                                <li>Integration of wired and wireless networks</li>
+                                <li>Information access in wireless networks</li>
+                                <li>Mobile ad hoc and sensor networks</li>
+                                <li>Online Engineering</li>
+                                <li>OS and middleware support for mobile computing and networking</li>
+                                <li>Performance of mobile and wireless networks and systems</li>
+                                <li>Resource management in mobile, wireless and ad-hoc networks</li>
+                                <li>Routing, and communication primitives in ad-hoc and sensor networks</li>
+                                <li>Satellite communications</li>
+                                <li>Service creation and management environments for mobile/wireless systems</li>
+                                <li>Synchronization and scheduling issues in mobile and ad hoc networks</li>
+                                <li>Wireless multimedia systems</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Educational Transformation (Full Width) -->
+                    <div class="topic-card wow fadeInUp" data-wow-delay="0.7s" style="grid-column: 1 / -1;">
+                        <div class="topic-card-header">
+                            <div class="topic-card-icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="topic-card-title">Educational Transformation</h3>
+                        </div>
+                        <div class="topic-card-body">
+                            <ul class="topic-list">
+                                <li>Intelligent Education Transformation Path</li>
+                                <li>Data-Driven Teaching Innovation</li>
+                                <li>AI Aids Education Transformation</li>
+                                <li>Big Data Cultivates New Ecology</li>
+                                <li>Intelligent-Data Integrated Education Transformation</li>
+                                <li>Intelligent-Data Power in Education Transformation</li>
+                                <li>Exploration of Digital-Intelligent Education Transformation</li>
+                                <li>AI & Big Data for Education Transformation</li>
+                                <li>Intelligent-Data Application in Education Transformation</li>
+                                <li>Intelligent-Data Empowers Education Transformation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item wow fadeInUp">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Secretary Email</h4>
+                            <p>littledune@ieti.net</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="contact-icon">
+                            <i class="fa fa-paper-plane-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Submission Link</h4>
+                            <p><a href="https://www.conftool.com/isbdai2026/" target="_blank">Conftool Portal</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Conference Website</h4>
+                            <p><a href="https://www.ieti.net/conf/isbdai/index.html" target="_blank">ieti.net/conf/isbdai</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="background: #0f1724; padding: 40px 0;">
+        <div class="container">
+            <div class="copyright" style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                &copy; Copyright <strong style="color: #c9a962;">ISBDAI</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="libinfo/jquery/jquery.min.js"></script>
+    <script src="libinfo/jquery/jquery-migrate.min.js"></script>
+    <script src="libinfo/easing/easing.min.js"></script>
+    <script src="libinfo/mobile-nav/mobile-nav.js"></script>
+    <script src="libinfo/wow/wow.min.js"></script>
+    <script src="libinfo/waypoints/waypoints.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

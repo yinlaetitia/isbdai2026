@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Past Keynote Speakers | ISBDAI 2026</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ISBDAI Past Keynotes, Previous Keynote Speakers, Academic Conference History" name="keywords">
+    <meta content="Past keynote speakers from ISBDAI conferences 2018-2024" name="description">
+
+    <!-- Favicons -->
+    <link href="img/page/favicon.ico" rel="icon">
+    <link href="img/page/favicon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="libinfo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libinfo/animate0/animate.min.css" rel="stylesheet">
+    <link href="libinfo/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Past Keynote Specific Styles */
+        .year-section {
+            margin-bottom: var(--space-2xl);
+        }
+        .year-header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: var(--color-white);
+            padding: var(--space-lg) var(--space-xl);
+            border-radius: var(--radius-xl);
+            margin-bottom: var(--space-xl);
+            text-align: center;
+        }
+        .year-header h3 {
+            font-size: var(--text-2xl);
+            font-weight: 700;
+            margin: 0;
+        }
+        .keynote-speaker-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-mid-gray);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            margin-bottom: var(--space-lg);
+            transition: all var(--transition-base);
+        }
+        .keynote-speaker-card:hover {
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-4px);
+            border-color: transparent;
+        }
+        .speaker-header {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-lg);
+        }
+        .speaker-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--color-light-gray);
+            flex-shrink: 0;
+        }
+        .speaker-basic-info {
+            flex: 1;
+        }
+        .speaker-name {
+            font-size: var(--text-xl);
+            font-weight: 600;
+            color: var(--color-text-dark);
+            margin-bottom: var(--space-xs);
+        }
+        .speaker-institution {
+            font-size: var(--text-base);
+            color: var(--color-text);
+            margin-bottom: var(--space-sm);
+        }
+        .speaker-affiliation-logos {
+            display: flex;
+            gap: var(--space-sm);
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .speaker-affiliation-logos img {
+            height: 80px;
+            width: auto;
+            object-fit: contain;
+        }
+        .speech-title {
+            background: var(--color-light-gray);
+            padding: var(--space-md);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-md);
+        }
+        .speech-title strong {
+            color: var(--color-primary);
+        }
+        .speaker-bio {
+            font-size: var(--text-sm);
+            color: var(--color-text);
+            line-height: var(--leading-relaxed);
+        }
+        .speaker-bio p {
+            margin-bottom: var(--space-sm);
+        }
+        .speaker-bio a {
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+        .speaker-bio a:hover {
+            color: var(--color-accent-dark);
+        }
+        .keynote-grid-simple {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--space-lg);
+        }
+        .keynote-card-simple {
+            background: var(--color-white);
+            border: 1px solid var(--color-mid-gray);
+            border-radius: var(--radius-xl);
+            padding: var(--space-lg);
+            text-align: center;
+            transition: all var(--transition-base);
+        }
+        .keynote-card-simple:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+            border-color: transparent;
+        }
+        .keynote-card-simple .speaker-photo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto var(--space-md);
+        }
+        .keynote-card-simple .speaker-name {
+            font-size: var(--text-lg);
+        }
+        .keynote-card-simple .speaker-institution {
+            font-size: var(--text-sm);
+        }
+        @media (max-width: 767px) {
+            .speaker-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .speaker-affiliation-logos {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header - Conference Style Navigation -->
+    <header id="header" class="header-scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/page/logo.png" alt="ISBDAI Logo" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down">
+                        <a href="#">Calls</a>
+                        <ul>
+                            <li><a href="cfp.html">Call for Papers</a></li>
+                            <li><a href="cfw.html">Call for Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#">Program</a>
+                        <ul>
+                            <li><a href="cp.html">Conference Program</a></li>
+                            <li><a href="keynotes.html">Keynotes</a></li>
+                            <li><a href="Workshops.html">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sr.html">Submission</a></li>
+                    <li><a href="vi.html">Venue</a></li>
+                    <li><a href="committees.html">Organization Committees</a></li>
+                    <li class="drop-down">
+                        <a href="#">History</a>
+                        <ul>
+                            <li><a href="history.html">ISBDAI History</a></li>
+                            <li><a href="bpa.html">Best Paper Awards</a></li>
+                            <li><a href="past-keynotes.html">Past Keynotes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cu.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header with Image Carousel -->
+    <div class="page-header">
+        <div class="page-header-carousel">
+            <div class="page-header-slide active" style="background-image: url('img/page/polyu.jpg');"></div>
+            <div class="page-header-slide" style="background-image: url('img/page/polyu2.jpg');"></div>
+            <div class="page-header-slide" style="background-image: url('img/page/polyu3.jpg');"></div>
+            <div class="page-header-overlay"></div>
+        </div>
+        <div class="container">
+            <h1 class="page-title">Past Keynote Speakers</h1>
+            <p class="page-subtitle">Distinguished speakers from previous ISBDAI conferences</p>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="page-content">
+            <div class="container">
+
+                <!-- 2024 Keynote Speakers -->
+                <div class="year-section wow fadeInUp">
+                    <div class="year-header" style="background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);">
+                        <h3>2024 Keynote Speakers</h3>
+                    </div>
+                    <div class="keynote-grid-simple">
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/ramesh.png" alt="Ramesh K. Agarwal" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Ramesh K. Agarwal</div>
+                            <div class="speaker-institution">McKelvey School of Engineering, Washington University in St. Louis, USA</div>
+                            <div class="speaker-affiliation-logos" style="justify-content: center; margin-top: var(--space-sm);">
+                                <img src="img/speakers/wu.png" alt="Washington University">
+                            </div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/Jeff.png" alt="Jeff Jianfu Shen" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Jeff Jianfu Shen</div>
+                            <div class="speaker-institution">Hong Kong Polytechnic University, Hong Kong</div>
+                            <div class="speaker-affiliation-logos" style="justify-content: center; margin-top: var(--space-sm);">
+                                <img src="img/speakers/hkpu.png" alt="PolyU">
+                            </div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/jamesc.png" alt="M. James C. Crabbe" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. M. James C. Crabbe</div>
+                            <div class="speaker-institution">Wolfson College of Oxford University, UK</div>
+                            <div class="speaker-affiliation-logos" style="justify-content: center; margin-top: var(--space-sm);">
+                                <img src="img/speakers/Oxford.png" alt="Oxford">
+                            </div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/vc.png" alt="Vladimir Chigrinov" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Vladimir Chigrinov</div>
+                            <div class="speaker-institution">Department of Electronic and Computer Engineering, Hong Kong University of Science and Technology, Hong Kong</div>
+                            <div class="speaker-affiliation-logos" style="justify-content: center; margin-top: var(--space-sm);">
+                                <img src="img/speakers/hkust.png" alt="HKUST">
+                            </div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/Masahito.png" alt="Masahito Hayashi" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Masahito Hayashi</div>
+                            <div class="speaker-institution">School of Data Science, The Chinese University of Hong Kong, Shenzhen</div>
+                            <div class="speaker-affiliation-logos" style="justify-content: center; margin-top: var(--space-sm);">
+                                <img src="img/speakers/cuhks.png" alt="CUHK-SZ">
+                            </div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/ritayiman.png" alt="Rita Yi Man Li" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Rita Yi Man Li</div>
+                            <div class="speaker-institution">Professor in the Department of Economics and Finance, Hong Kong Shue Yan University, Hong Kong</div>
+                            <div class="speaker-affiliation-logos" style="justify-content: center; margin-top: var(--space-sm);">
+                                <img src="img/speakers/hksyu.png" alt="HKSYU">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2022 Keynote Speakers -->
+                <div class="year-section wow fadeInUp">
+                    <div class="year-header" style="background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);">
+                        <h3>2022 Keynote Speakers</h3>
+                    </div>
+
+                    <!-- Prof. Dr. Yin Kwee Ng - with detailed bio -->
+                    <div class="keynote-speaker-card">
+                        <div class="speaker-header">
+                            <img src="img/speakers/eddie.png" alt="Yin Kwee Ng" class="speaker-photo">
+                            <div class="speaker-basic-info">
+                                <div class="speaker-name">Prof. Dr. Yin Kwee Ng</div>
+                                <div class="speaker-institution">Nanyang Technological University, Singapore</div>
+                                <div class="speaker-affiliation-logos">
+                                    <img src="img/speakers/ntu.png" alt="NTU">
+                                    <img src="img/speakers/ntuqs.png" alt="NTU QS">
+                                    <img src="img/speakers/ntuthe.png" alt="NTU THE">
+                                    <img src="img/speakers/ntuus.png" alt="NTU US">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speech-title">
+                            <strong>Speech title:</strong> On the limitations of machine learning methodologies in predicting the wake characteristics of wind turbines
+                        </div>
+                        <div class="speaker-bio">
+                            <p>He is elected as: Academician for European Academy of Sciences and Arts (AEASA, EU), an honor reserved for the world's most outstanding scholars; Fellow (Life) of the American Society of Mechanical Engineers (FASME, USA); Fellow of Institute of Engineering and Technology (FIET, United Kingdom); Fellow of International Engineering and Technology Institute (FIETI, Hong Kong), Distinguished Fellow for Institute of Data Science and Artificial Intelligence, (DFIDSAI, China), and, Academician for Academy of Pedagogy and Learning, (USA).</p>
+                            <p>He published > 542 papers in SCI-IF int. journal (430); int. conf. proceedings (130), textbook chapters (>105) and others (32) over the 28 years. Co-edited 14 books on "Cardiac Pumping and Perfusion Engineering" by WSP (2007); "Imaging and Modelling of Human Eye” by Artech (2008); "Distributed Diagnosis and Home Healthcare, v.1” by ASP (2009); "Performance Evaluation in Breast Imaging, Tumor Detection & Analysis” by ASP (2010); "Distributed Diagnosis and Home Healthcare, v.3” by ASP (2011); "Computational Analysis of Human eye with Applications” by WSP (2011); "Human Eye Imaging and Modeling” by CRC (2011); "Multimodality Breast Imaging” by SPIE (2013); "Image Analysis and Modeling in Ophthalmology”; "Ophthalmology Imaging and Applications” by CRC (2013, 2014); "Bio-inspired Surfaces and Applications” by WSP (2016); "Application of Infrared to Biomedical Sciences” by Springer (2017) and "Computation and Mathematical Methods in Cardiovascular Physiology” by WSP (2019). Also, co-authored a text book: "Compressor Instability with Integral Methods” by Springer (2007).</p>
+                            <p>He is in the Stanford list of the World's top 2% Scientists since 2019 (ranked 83 out of 64,425 as top 0.001% in the field of Biomedical Engineering, 2020) (See <a href="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/3" target="_blank"> website</a>). The ranking method is calculated by removing the self-citation of the literature. Ranked # 7 (Worldwide) in Google Scholar under Biomedical, cited by 14400 (h-index: 62) (See <a href="http://scholar.google.com.sg/citations?user=9QW1LYAAAAAJ" target="_blank"> website</a>). His Scores in researchgate.net is also one of the highest within the schools and is higher than 98% of all ResearchGate members' scores (See <a href="https://www.researchgate.net/profile/Eddie-Ng-3/scores" target="_blank"> website</a>).</p>
+                            <p>More details like the latest H-index, SCI-total citations are available in <a href="http://www.researcherid.com/rid/A-1375-2011" target="_blank"> http://www.researcherid.com/rid/A-1375-2011</a> & <a href="http://scholar.google.com.sg/citations?user=9QW1LYAAAAAJ" target="_blank"> http://scholar.google.com.sg/citations?user=9QW1LYAAAAAJ</a>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Prof. Dr. Ben Niu - with detailed bio -->
+                    <div class="keynote-speaker-card">
+                        <div class="speaker-header" >
+                            <img src="img/speakers/niu.png" alt="Ben Niu" class="speaker-photo">
+                            <div class="speaker-basic-info">
+                                <div class="speaker-name">Prof. Dr. Ben Niu</div>
+                                <div class="speaker-institution">Shenzhen University, China</div>
+                                <div class="speaker-affiliation-logos">
+                                    <img src="img/speakers/szu.png" alt="SZU">
+                                    <img src="img/speakers/szuqs.png" alt="SZU QS">
+                                    <img src="img/speakers/szuthe.png" alt="SZU THE">
+                                    <img src="img/speakers/szuus.png" alt="SZU US">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speech-title">
+                            <strong>Speech title:</strong> Big Data Analytics in Healthcare Based on Swarm Intelligence
+                        </div>
+                        <div class="speaker-bio">
+                            <p>He is a Professor and Doctoral Supervisor of Shenzhen University, and an External Doctoral Supervisor of the Hong Kong Polytechnic University and the University of Macau. He received his Doctoral degree from the Chinese Academy of Sciences, and later became a postdoctoral fellow at the Chinese Academy of Sciences and the Hong Kong Polytechnic University. He spent several years as a visiting scholar at the University of Edinburgh (UK), Arizona State University (USA), and Victoria University of Wellington (New Zealand). He is now the Associate Dean of College of Management and Institution of Hospital Management, and the Head of Doctoral programs in Management Science and Engineering (first-level discipline) at Shenzhen University.</p>
+                            <p>He has been committed to multi-disciplinary research in Artificial Intelligence, Big Data Analysis and Processing, Information System and Information Management, Operation Research and Optimization, Logistics and Supply Chain Management, Smart Medical Care, and other fields for a long time. He hosted 6 national-level projects funded by the National Natural Science Foundation of China (1 co-hosted), 5 provincial-level projects (1 Major Project funded by the Department of Education of Guangdong Province, 1 Special Project in Key Fields of Universities in Guangdong Province, and 3 projects funded by the Natural Science Foundation of Guangdong Province), 2 projects funded by China Postdoctoral Science Foundation (1 specially-funded), and 10+ other provincial- & municipal-level projects. He published 200+ relevant academic papers, including 79 SCI/SSCI papers (3 ESI Hot Papers, Highly Cited Papers), 99 EI papers, 9 monographs, and 9 patents and software copyrights.</p>
+                            <p>In recent years, he is honored to be selected into many academic honor lists, such as “Hong Kong Scholars” jointly by the National Postdoctoral Administrative Committee Office and the Society of Hong Kong Scholars and “Thousand-Hundred-Ten Talent Project” by Guangdong Province in 2012, “High-level Professionals” by Shenzhen in 2013, “Peacock Plan for Overseas High-level Talents” by Shenzhen in 2014, “Outstanding Young Teachers” by Guangdong Province in 2015, “Pearl River Scholars” by Guangdong Province in 2016, “Member of the Teaching Steering Committee for Higher Education in Industrial Engineering Discipline” by Ministry of Education in 2018, “Excellent Teachers of Southern Guangdong” by Guangdong Province and “Leaders in Innovation Fellowships” jointly by the Chinese Academy of Engineering (China) and the Royal Academy of Engineering (UK) in 2021, and “World Ranking Top 2% Scientists” by Stanford University for three consecutive years from 2020 to 2022. He has won 20 academic awards, including the Best Paper Award of International Conference on Swarm Intelligence (ICSI), the Best Paper Award of International Conference on Intelligent Computing (ICIC), and the Excellent Paper Award of Chinese Academy of Management Annual Conference, and have coached students to win 2 Silver Awards on “Internet+” National Competition.</p>
+                            <p>In the past five years, he has supervised 10 Postdoctoral Fellows (5 have completed their projects), 10 Doctoral students (3 have graduated, 5 Foreign students), and 8 Master students (5 for PhD overseas with full scholarships or China Scholarship Council Grants, 2 for PhD in China after graduation).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2020 Keynote Speakers -->
+                <div class="year-section wow fadeInUp">
+                    <div class="year-header" style="background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);">
+                        <h3>2020 Keynote Speakers</h3>
+                    </div>
+                    <div class="keynote-grid-simple">
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/Kelvin.png" alt="Kelvin Joseph Bwalya" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Kelvin Joseph Bwalya</div>
+                            <div class="speaker-institution">University of Johannesburg, South Africa</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/Otilia.png" alt="Otilia Manta" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Otilia Manta</div>
+                            <div class="speaker-institution">Romanian Academy, Romania</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/Ubaldo.jpg" alt="Ubaldo Comite" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Ubaldo Comite</div>
+                            <div class="speaker-institution">University Giustino Fortunato - Benevento, Italy</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/rita.png" alt="Rita Yi Man Li" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Rita Yi Man Li</div>
+                            <div class="speaker-institution">Director of Sustainable Real Estate Research Center, Hong Kong Shue Yan University, Hong Kong</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/Gabriel.png" alt="Gabriel Xiao-Guang Yue" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Gabriel Xiao-Guang Yue</div>
+                            <div class="speaker-institution">Department of Computer Science and Engineering, School of Sciences, European University Cyprus, Cyprus</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/cao.jpg" alt="Yong Cao" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Yong Cao</div>
+                            <div class="speaker-institution">School of Big Data and Intelligent Engineering, Southwest Forestry University, Kunming</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/jiang.png" alt="Song Jiang" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Song Jiang</div>
+                            <div class="speaker-institution">Xi'an University of Architecture and Technology, Xi'an</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/gao.png" alt="Zhenran Gao" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Zhenran Gao</div>
+                            <div class="speaker-institution">Guizhou University, Guiyang</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2018 Keynote Speakers -->
+                <div class="year-section wow fadeInUp">
+                    <div class="year-header" style="background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);">
+                        <h3>2018 Keynote Speakers</h3>
+                    </div>
+                    <div class="keynote-grid-simple">
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/Kelvin.png" alt="Kelvin Joseph Bwalya" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Kelvin Joseph Bwalya</div>
+                            <div class="speaker-institution">Vice Dean of Faculty of Business and Economics, University of Johannesburg, South Africa</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/liu.png" alt="Peide Liu" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Peide Liu</div>
+                            <div class="speaker-institution">Dean of School of Management Science and Engineering, Shandong University of Finance and Economics, Jinan</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/rita.png" alt="Rita Yi Man Li" class="speaker-photo">
+                            <div class="speaker-name">Prof. Dr. Rita Yi Man Li</div>
+                            <div class="speaker-institution">Director of Sustainable Real Estate Research Center, Hong Kong Shue Yan University, Hong Kong</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2018 Speakers (Non-Keynote) -->
+                <div class="year-section wow fadeInUp">
+                    <div class="year-header" style="background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);">
+                        <h3>2018 Invited Speakers</h3>
+                    </div>
+                    <div class="keynote-grid-simple">
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/chen.png" alt="Dagui Chen" class="speaker-photo">
+                            <div class="speaker-name">Dagui Chen</div>
+                            <div class="speaker-institution">Tsinghua University, Beijing</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/Mashilo.png" alt="Mashilo Thomas Modiba" class="speaker-photo">
+                            <div class="speaker-name">Mashilo Thomas Modiba</div>
+                            <div class="speaker-institution">University of South Africa, South Africa</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/peng.png" alt="Yu-Hsiang Peng" class="speaker-photo">
+                            <div class="speaker-name">Yu-Hsiang Peng</div>
+                            <div class="speaker-institution">Center for High-performance Computing, Taiwan</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/Baenova.png" alt="Baenova Gulmira" class="speaker-photo">
+                            <div class="speaker-name">Baenova Gulmira</div>
+                            <div class="speaker-institution">L.N. Gumilyov ENU, Kazakhstan</div>
+                        </div>
+
+                        <div class="keynote-card-simple">
+                            <img src="img/speakers/Mu.png" alt="Shenglin Mu" class="speaker-photo">
+                            <div class="speaker-name">Shenglin Mu</div>
+                            <div class="speaker-institution">Ehime University, Japan</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item wow fadeInUp">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Secretary Email</h4>
+                            <p>littledune@ieti.net</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="contact-icon">
+                            <i class="fa fa-paper-plane-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Submission Link</h4>
+                            <p><a href="https://www.conftool.com/isbdai2026/" target="_blank">Conftool Portal</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Conference Website</h4>
+                            <p><a href="https://www.ieti.net/conf/isbdai/index.html" target="_blank">ieti.net/conf/isbdai</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="background: #0f1724; padding: 40px 0;">
+        <div class="container">
+            <div class="copyright" style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                &copy; Copyright <strong style="color: #c9a962;">ISBDAI</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="libinfo/jquery/jquery.min.js"></script>
+    <script src="libinfo/jquery/jquery-migrate.min.js"></script>
+    <script src="libinfo/easing/easing.min.js"></script>
+    <script src="libinfo/mobile-nav/mobile-nav.js"></script>
+    <script src="libinfo/wow/wow.min.js"></script>
+    <script src="libinfo/waypoints/waypoints.min.js"></script>
+    <script src="libinfo/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Conference Program - ISBDAI 2026</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="2026 5th International Symposium on Big Data and Artificial Intelligence: For Education Transformation (2026 ISBDAI)" name="keywords">
+    <meta content="Conference program and schedule for ISBDAI 2026" name="description">
+
+    <!-- Favicons -->
+    <link href="img/page/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="libinfo/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="libinfo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libinfo/animate0/animate.min.css" rel="stylesheet">
+    <link href="libinfo/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="libinfo/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="libinfo/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Program Coming Soon */
+        .program-coming-soon {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .coming-soon-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #0f1724 0%, #1a2634 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+        }
+
+        .coming-soon-icon i {
+            font-size: 3rem;
+            color: #c9a962;
+        }
+
+        .program-coming-soon h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0f1724;
+            margin-bottom: 1rem;
+        }
+
+        .program-coming-soon p {
+            color: #5a6a7a;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .notify-box {
+            background: #f8f9fb;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .notify-box h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0f1724;
+            margin-bottom: 1rem;
+        }
+
+        .notify-box p {
+            color: #5a6a7a;
+            margin-bottom: 1rem;
+        }
+
+        .notify-box a {
+            color: #c9a962;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .notify-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Preview Schedule */
+        .preview-schedule {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 40px rgba(15, 23, 36, 0.08);
+            padding: 2.5rem;
+            margin-top: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .preview-schedule h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0f1724;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .preview-schedule h3 i {
+            color: #c9a962;
+        }
+
+        .preview-note {
+            background: rgba(201, 169, 98, 0.1);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.85rem;
+            color: #8a7a4a;
+        }
+
+        .schedule-day {
+            margin-bottom: 2rem;
+        }
+
+        .schedule-day:last-child {
+            margin-bottom: 0;
+        }
+
+        .day-header {
+            background: linear-gradient(135deg, #0f1724 0%, #1a2634 100%);
+            color: #fff;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .day-header i {
+            color: #c9a962;
+        }
+
+        .schedule-item {
+            display: flex;
+            padding: 1rem 0;
+            border-bottom: 1px solid #f0f2f5;
+        }
+
+        .schedule-item:last-child {
+            border-bottom: none;
+        }
+
+        .schedule-time {
+            width: 120px;
+            flex-shrink: 0;
+            font-weight: 500;
+            color: #c9a962;
+            font-size: 0.9rem;
+        }
+
+        .schedule-content {
+            flex: 1;
+        }
+
+        .schedule-content .activity {
+            font-weight: 500;
+            color: #0f1724;
+            margin-bottom: 0.25rem;
+        }
+
+        .schedule-content .description {
+            font-size: 0.85rem;
+            color: #5a6a7a;
+        }
+
+        .schedule-item.highlight {
+            background: rgba(201, 169, 98, 0.08);
+            margin: 0 -1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            border-bottom: none;
+        }
+
+        @media (max-width: 768px) {
+            .schedule-item {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .schedule-time {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header - Conference Style Navigation -->
+    <header id="header" class="header-scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/page/logo.png" alt="ISBDAI Logo" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down">
+                        <a href="#">Calls</a>
+                        <ul>
+                            <li><a href="cfp.html">Call for Papers</a></li>
+                            <li><a href="cfw.html">Call for Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#">Program</a>
+                        <ul>
+                            <li><a href="cp.html">Conference Program</a></li>
+                            <li><a href="keynotes.html">Keynotes</a></li>
+                            <li><a href="Workshops.html">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sr.html">Submission</a></li>
+                    <li><a href="vi.html">Venue</a></li>
+                    <li><a href="committees.html">Organization Committees</a></li>
+                    <li class="drop-down">
+                        <a href="#">History</a>
+                        <ul>
+                            <li><a href="history.html">ISBDAI History</a></li>
+                            <li><a href="bpa.html">Best Paper Awards</a></li>
+                            <li><a href="past-keynotes.html">Past Keynotes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cu.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!--==========================
+          Page Header with Image Carousel
+        ============================-->
+        <div class="page-header">
+            <div class="page-header-carousel">
+                <div class="page-header-slide active" style="background-image: url('img/page/polyu.jpg');"></div>
+                <div class="page-header-slide" style="background-image: url('img/page/polyu2.jpg');"></div>
+                <div class="page-header-slide" style="background-image: url('img/page/polyu3.jpg');"></div>
+                <div class="page-header-overlay"></div>
+            </div>
+            <div class="container">
+                <h1 class="page-title wow fadeInUp">Conference Program</h1>
+                <p class="page-subtitle wow fadeInUp" data-wow-delay="0.1s">Schedule of events and sessions at ISBDAI 2026</p>
+            </div>
+        </div>
+
+        <!--==========================
+          Program Section
+        ============================-->
+        <section style="padding: 80px 0;">
+            <div class="container">
+
+                <div class="program-coming-soon wow fadeInUp">
+                    <div class="coming-soon-icon">
+                        <i class="fa fa-calendar-check-o"></i>
+                    </div>
+                    <h2>Program Coming Soon</h2>
+                    <p>The detailed conference program for ISBDAI 2026 is currently being finalized. Please check back closer to the conference date for the complete schedule of keynotes, presentations, and sessions.</p>
+
+                    <div class="notify-box">
+                        <h4><i class="fa fa-bell" style="color: #c9a962; margin-right: 0.5rem;"></i> Stay Updated</h4>
+                        <p>For the latest updates on the conference program, please contact our secretary or check the official website regularly.</p>
+                        <a href="mailto:littledune@ieti.net"><i class="fa fa-envelope" style="margin-right: 0.5rem;"></i> littledune@ieti.net</a>
+                    </div>
+                </div>
+
+                <!-- Preview Schedule (Tentative) -->
+                <div class="preview-schedule wow fadeInUp" data-wow-delay="0.1s">
+                    <h3><i class="fa fa-clock-o"></i> Tentative Schedule Overview</h3>
+                    <div class="preview-note">
+                        <i class="fa fa-info-circle" style="margin-right: 0.5rem;"></i>
+                        This is a preliminary schedule. Exact timings and sessions will be updated.
+                    </div>
+
+                    <div class="schedule-day">
+                        <div class="day-header">
+                            <i class="fa fa-calendar"></i>
+                            Day 1 - Main Conference
+                        </div>
+                        <div class="schedule-item highlight">
+                            <div class="schedule-time">09:00 - 09:30</div>
+                            <div class="schedule-content">
+                                <div class="activity">Registration</div>
+                                <div class="description">On-site check-in and badge collection</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">09:30 - 09:40</div>
+                            <div class="schedule-content">
+                                <div class="activity">Opening Ceremony</div>
+                                <div class="description">Welcome address and introduction</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">09:40 - 10:30</div>
+                            <div class="schedule-content">
+                                <div class="activity">Keynote Session I</div>
+                                <div class="description">Invited speaker presentation</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">10:30 - 11:00</div>
+                            <div class="schedule-content">
+                                <div class="activity">Coffee Break & Networking</div>
+                                <div class="description">Photo session</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">11:00 - 12:00</div>
+                            <div class="schedule-content">
+                                <div class="activity">Keynote Session II</div>
+                                <div class="description">Invited speaker presentation</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">12:00 - 14:00</div>
+                            <div class="schedule-content">
+                                <div class="activity">Lunch Break</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">14:00 - 16:00</div>
+                            <div class="schedule-content">
+                                <div class="activity">Paper Presentations I</div>
+                                <div class="description">Discussion and Q&A sessions</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">16:00 - 16:20</div>
+                            <div class="schedule-content">
+                                <div class="activity">Afternoon Break</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">16:20 - 17:30</div>
+                            <div class="schedule-content">
+                                <div class="activity">Paper Presentations II</div>
+                                <div class="description">Discussion and Q&A sessions</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-day">
+                        <div class="day-header">
+                            <i class="fa fa-calendar"></i>
+                            Day 2 - Workshops & Visit
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">09:00 - 12:00</div>
+                            <div class="schedule-content">
+                                <div class="activity">Workshop Sessions</div>
+                                <div class="description">Parallel workshop tracks</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">12:00 - 13:30</div>
+                            <div class="schedule-content">
+                                <div class="activity">Lunch</div>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">14:00 - 17:00</div>
+                            <div class="schedule-content">
+                                <div class="activity">Post-Conference Visit</div>
+                                <div class="description">Optional campus or city tour</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item wow fadeInUp">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Secretary Email</h4>
+                            <p>littledune@ieti.net</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="contact-icon">
+                            <i class="fa fa-paper-plane-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Submission Link</h4>
+                            <p><a href="https://www.conftool.com/isbdai2026/" target="_blank">Conftool Portal</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Conference Website</h4>
+                            <p><a href="https://www.ieti.net/conf/isbdai/index.html" target="_blank">ieti.net/conf/isbdai</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="background: #0f1724; padding: 40px 0;">
+        <div class="container">
+            <div class="copyright" style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                &copy; Copyright <strong style="color: #c9a962;">ISBDAI</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="libinfo/jquery/jquery.min.js"></script>
+    <script src="libinfo/jquery/jquery-migrate.min.js"></script>
+    <script src="libinfo/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libinfo/easing/easing.min.js"></script>
+    <script src="libinfo/mobile-nav/mobile-nav.js"></script>
+    <script src="libinfo/wow/wow.min.js"></script>
+    <script src="libinfo/waypoints/waypoints.min.js"></script>
+    <script src="libinfo/counterup/counterup.min.js"></script>
+    <script src="libinfo/owlcarousel/owl.carousel.min.js"></script>
+    <script src="libinfo/isotope/isotope.pkgd.min.js"></script>
+    <script src="libinfo/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

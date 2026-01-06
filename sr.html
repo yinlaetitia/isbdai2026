@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Submission & Registration - ISBDAI 2026</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="2026 5th International Symposium on Big Data and Artificial Intelligence: For Education Transformation (2026 ISBDAI)" name="keywords">
+    <meta content="Submission guidelines and registration information for ISBDAI 2026 conference" name="description">
+
+    <!-- Favicons -->
+    <link href="img/page/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="libinfo/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="libinfo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libinfo/animate0/animate.min.css" rel="stylesheet">
+    <link href="libinfo/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="libinfo/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="libinfo/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Submission Options Grid */
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (max-width: 992px) {
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .option-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 4px 20px rgba(15, 23, 36, 0.06);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .option-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #c9a962, #e8d5a3);
+            transform: scaleX(0);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .option-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(15, 23, 36, 0.12);
+        }
+
+        .option-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .option-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #c9a962 0%, #e8d5a3 100%);
+            color: #0f1724;
+            font-weight: 700;
+            font-size: 1.25rem;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+        }
+
+        .option-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0f1724;
+            margin-bottom: 0.75rem;
+        }
+
+        .option-card .option-desc {
+            color: #5a6a7a;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .option-card .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: #0f1724;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin: 0.25rem;
+        }
+
+        .option-card .btn-download:hover {
+            background: #c9a962;
+            color: #0f1724;
+        }
+
+        .option-card .btn-download.secondary {
+            background: transparent;
+            border: 1px solid #e1e5eb;
+            color: #0f1724;
+        }
+
+        .option-card .btn-download.secondary:hover {
+            border-color: #c9a962;
+            background: rgba(201, 169, 98, 0.1);
+        }
+
+        /* Requirements Section */
+        .requirements-section {
+            background: linear-gradient(135deg, #0f1724 0%, #1a2634 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 4rem;
+            color: #fff;
+        }
+
+        .requirements-section h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #fff;
+        }
+
+        .requirements-section h3 i {
+            color: #c9a962;
+        }
+
+        .requirement-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .requirement-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .requirement-list li:last-child {
+            border-bottom: none;
+        }
+
+        .requirement-list li i {
+            color: #c9a962;
+            margin-top: 0.25rem;
+            flex-shrink: 0;
+        }
+
+        .requirement-list li span {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+        }
+
+        .requirement-list li a {
+            color: #c9a962;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .requirement-list li a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        .warning-box {
+            background: rgba(201, 169, 98, 0.15);
+            border-left: 4px solid #c9a962;
+            padding: 1.25rem 1.5rem;
+            margin-top: 2rem;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .warning-box p {
+            margin: 0;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /* Fees Table */
+        .fees-section {
+            margin-bottom: 4rem;
+        }
+
+        .fees-section h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #0f1724;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .fees-table-wrapper {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(15, 23, 36, 0.06);
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .fees-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .fees-table thead {
+            background: linear-gradient(135deg, #0f1724 0%, #1a2634 100%);
+        }
+
+        .fees-table thead th {
+            color: #fff;
+            font-weight: 600;
+            padding: 1.25rem 1.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .fees-table thead th:first-child {
+            text-align: left;
+        }
+
+        .fees-table tbody td {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid #f0f2f5;
+            text-align: center;
+            color: #3a4a5a;
+        }
+
+        .fees-table tbody td:first-child {
+            text-align: left;
+            font-weight: 500;
+            color: #0f1724;
+        }
+
+        .fees-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .fees-table tbody tr:hover {
+            background: rgba(201, 169, 98, 0.05);
+        }
+
+        .fees-table .price {
+            font-weight: 600;
+            color: #0f1724;
+        }
+
+        .fees-table .price.highlight {
+            color: #c9a962;
+        }
+
+        .fees-note {
+            text-align: center;
+            color: #5a6a7a;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        /* Discount Policies */
+        .policies-section {
+            background: #f8f9fb;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .policies-section h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0f1724;
+            margin-bottom: 2rem;
+        }
+
+        .policy-block {
+            margin-bottom: 2rem;
+        }
+
+        .policy-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .policy-block h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0f1724;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .policy-block h4 .badge {
+            background: linear-gradient(135deg, #c9a962 0%, #e8d5a3 100%);
+            color: #0f1724;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .policy-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0 1.5rem;
+        }
+
+        .policy-list li {
+            position: relative;
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            color: #5a6a7a;
+            line-height: 1.6;
+        }
+
+        .policy-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            width: 6px;
+            height: 6px;
+            background: #c9a962;
+            border-radius: 50%;
+        }
+
+        .important-conditions {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border: 1px solid #e1e5eb;
+        }
+
+        .important-conditions h5 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0f1724;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .requirements-section,
+            .policies-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .fees-table thead th,
+            .fees-table tbody td {
+                padding: 1rem;
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Publication Ethics */
+        .ethics-section {
+            margin-bottom: 4rem;
+        }
+
+        .ethics-section h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #0f1724;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .ethics-list {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-white);
+            border: 1px solid var(--color-mid-gray);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+        }
+
+        .ethics-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-md);
+            padding: var(--space-lg);
+            border-bottom: 1px solid var(--color-light-gray);
+            transition: background var(--transition-fast);
+        }
+        .ethics-item:last-child {
+            border-bottom: none;
+        }
+
+        .ethics-item:hover {
+            background: var(--color-off-white);
+        }
+
+        .ethics-number {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-cream);
+            border-radius: 50%;
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--color-accent);
+            flex-shrink: 0;
+        }
+
+        .ethics-text {
+            font-size: var(--text-base);
+            color: var(--color-text);
+            line-height: var(--leading-relaxed);
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header - Conference Style Navigation -->
+    <header id="header" class="header-scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/page/logo.png" alt="ISBDAI Logo" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down">
+                        <a href="#">Calls</a>
+                        <ul>
+                            <li><a href="cfp.html">Call for Papers</a></li>
+                            <li><a href="cfw.html">Call for Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#">Program</a>
+                        <ul>
+                            <li><a href="cp.html">Conference Program</a></li>
+                            <li><a href="keynotes.html">Keynotes</a></li>
+                            <li><a href="Workshops.html">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sr.html">Submission</a></li>
+                    <li><a href="vi.html">Venue</a></li>
+                    <li><a href="committees.html">Organization Committees</a></li>
+                    <li class="drop-down">
+                        <a href="#">History</a>
+                        <ul>
+                            <li><a href="history.html">ISBDAI History</a></li>
+                            <li><a href="bpa.html">Best Paper Awards</a></li>
+                            <li><a href="past-keynotes.html">Past Keynotes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cu.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!--==========================
+          Page Header with Image Carousel
+        ============================-->
+        <div class="page-header">
+            <div class="page-header-carousel">
+                <div class="page-header-slide active" style="background-image: url('img/page/polyu.jpg');"></div>
+                <div class="page-header-slide" style="background-image: url('img/page/polyu2.jpg');"></div>
+                <div class="page-header-slide" style="background-image: url('img/page/polyu3.jpg');"></div>
+                <div class="page-header-overlay"></div>
+            </div>
+            <div class="container">
+                <h1 class="page-title wow fadeInUp">Submission & Registration</h1>
+                <p class="page-subtitle wow fadeInUp" data-wow-delay="0.1s">Choose your participation option and submit your work</p>
+            </div>
+        </div>
+
+        <!--==========================
+          Submission Options Section
+        ============================-->
+        <section style="padding: 80px 0;">
+            <div class="container">
+
+                <!-- Submission Options -->
+                <div class="options-grid">
+                    <div class="option-card wow fadeInUp">
+                        <div class="option-badge">A</div>
+                        <h3>Full Paper</h3>
+                        <p class="option-desc">Attendance + Paper Publication + Presentation</p>
+                        <a href="files/splnproc1703.zip" class="btn-download" target="_blank">
+                            <i class="fa fa-download"></i> Word Template
+                        </a>
+                        <a href="files/ProcSci_TeX.zip" class="btn-download secondary" target="_blank">
+                            <i class="fa fa-download"></i> LaTeX Template
+                        </a>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://www.conftool.com/isbdai2026/" class="btn-download" target="_blank" style="background: #c9a962; color: #0f1724;">
+                                <i class="fa fa-external-link"></i> Submit via ConfTool
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="option-card wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="option-badge">B</div>
+                        <h3>Abstract Only</h3>
+                        <p class="option-desc">Attendance + Abstract + Presentation</br>(No Publication)</p>
+                        <a href="files/Abstract Template.doc" class="btn-download" target="_blank">
+                            <i class="fa fa-download"></i> Abstract Template
+                        </a>
+                        <div style="margin-top: 1.5rem; color: #5a6a7a; font-size: 0.9rem;">
+                            Submit to: <a href="mailto:littledune@ieti.net" style="color: #c9a962;">littledune@ieti.net</a>
+                        </div>
+                    </div>
+
+                    <div class="option-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="option-badge">C</div>
+                        <h3>Listener Only</h3>
+                        <p class="option-desc">Attendance Only</br>(No Submission Required)</p>
+                        <a href="files/Listener Registration Form.doc" class="btn-download" target="_blank">
+                            <i class="fa fa-download"></i> Registration Form
+                        </a>
+                        <div style="margin-top: 1.5rem; color: #5a6a7a; font-size: 0.9rem;">
+                            Submit to: <a href="mailto:littledune@ieti.net" style="color: #c9a962;">littledune@ieti.net</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submission Requirements -->
+                <div class="requirements-section wow fadeInUp">
+                    <h3><i class="fa fa-check-circle"></i> Submission Requirements</h3>
+                    <ul class="requirement-list">
+                        <li>
+                            <i class="fa fa-circle" style="font-size: 8px;"></i>
+                            <span>The work should be <strong>original, unpublished</strong> and not simultaneously submitted to other workshops, conferences, or journals.</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-circle" style="font-size: 8px;"></i>
+                            <span>Perform a <strong>similarity check using iThenticate</strong>. Only papers with a similarity index of less than 20% and not more than 100 words per source are accepted by Springer. Correct citations are excluded.</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-circle" style="font-size: 8px;"></i>
+                            <span>Follow <strong>Springer's AI Policies</strong>: <a href="https://www.springernature.com/gp/policies/book-publishing-policies" target="_blank">springernature.com/gp/policies/book-publishing-policies</a>.</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-circle" style="font-size: 8px;"></i>
+                            <span>Your paper must match the <strong>provided Springer template</strong>.</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-circle" style="font-size: 8px;"></i>
+                            <span>Paper length: <strong>Short papers: max 7 pages</strong>, <strong>Full papers: 8-10 pages</strong> (including bibliography and appendix).</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-circle" style="font-size: 8px;"></i>
+                            <span>Tables must be <strong>editable</strong>. Do not insert them in image format.</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-circle" style="font-size: 8px;"></i>
+                            <span>Equations must be <strong>editable</strong>. Use MS Formula Editor or LaTeX (not image or plain text format).</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-circle" style="font-size: 8px;"></i>
+                            <span>Perform a <strong>final language check</strong>. Papers with insufficient English language level cannot be included in the proceedings.</span>
+                        </li>
+                    </ul>
+                    <div class="warning-box">
+                        <p><i class="fa fa-exclamation-triangle" style="margin-right: 0.5rem;"></i> Papers not meeting these criteria risk rejection without consideration!</p>
+                        <p>Similarity and AI checks are done after the conference by Springer. This means that your work might be accepted at the conference, but excluded later from the Springer publication.</p>
+                    </div>
+                </div>
+
+                <!-- Registration Fees -->
+                <div class="fees-section wow fadeInUp">
+                    <h3>Registration Fees</h3>
+                    <div class="fees-table-wrapper">
+                        <table class="fees-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Full Rate</th>
+                                    <th>IETI / Group / Student Rate</th>
+                                    <th>Discounted Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>On-site/Online Participant (incl. 1 paper)</td>
+                                    <td class="price">$600</td>
+                                    <td class="price">$480</td>
+                                    <td class="price highlight">$300</td>
+                                </tr>
+                                <tr>
+                                    <td>Accompanying Person / Participant Only (on-site)</td>
+                                    <td class="price">$400</td>
+                                    <td class="price">$280</td>
+                                    <td class="price highlight">$200</td>
+                                </tr>
+                                <tr>
+                                    <td>Presentation Only (no publication)</td>
+                                    <td class="price">$400</td>
+                                    <td class="price">$280</td>
+                                    <td class="price highlight">$200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="fees-note">All fees are in USD. Payment must be completed within 7 working days of acceptance notification.</p>
+                </div>
+
+                <!-- Discount Policies -->
+                <div class="policies-section wow fadeInUp">
+                    <h3>Fee Assistance & Discount Policies</h3>
+                    <p style="color: #5a6a7a; margin-bottom: 1.5rem;">We are pleased to offer the following concession rates for the event.</p>
+
+                    <div class="policy-block">
+                        <h4>Discounted Rate <span class="badge">50% OFF</span></h4>
+                        <p style="color: #5a6a7a; margin-bottom: 1rem;">Available to the following participants (supporting documents required during registration):</p>
+                        <ul class="policy-list">
+                            <li>Participants from low-income countries/regions</li>
+                            <li>Invited scholars</li>
+                            <li>People requiring accessibility accommodations</li>
+                            <li>Volunteers from registered non-profit organizations</li>
+                            <li>Individuals facing sudden and significant personal or family hardship</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-block">
+                        <h4>IETI Membership, Group & Student Rate</h4>
+                        <p style="color: #5a6a7a; margin-bottom: 1rem;">Available to IETI members, groups, and full-time students who are first author and designated presenter:</p>
+                        <ul class="policy-list">
+                            <li>"On-site / Online Participant" category: <strong>20% discount</strong></li>
+                            <li>"Accompanying Person" and "Presentation Only" categories: <strong>30% discount</strong></li>
+                            <li>Group registration (3 or more people) is eligible for member pricing</li>
+                        </ul>
+                    </div>
+
+                    <div class="important-conditions">
+                        <h5><i class="fa fa-info-circle" style="color: #c9a962; margin-right: 0.5rem;"></i> Important Conditions</h5>
+                        <ul class="policy-list">
+                            <li><strong>Proof of eligibility</strong> is required at the time of registration. Applications for discounts wil be reviewed, and approval will be confirmed within 5 working days.</li>
+                            <li>Only <strong>one discount type</strong> can be applied per participant (discounts cannot be combined).</li>
+                            <li>To be included in the program, each accepted paper must have <strong>at least one registered author</strong>, and payment must be completed within 7 working days of acceptance notification.</li>
+                            <li>A <strong>presentation must be made</strong> for each paper.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Publication Ethics -->
+                <div class="ethics-section wow fadeInUp">
+                    <h3>Peer Review, Publication Ethics and Malpractice Statement</h3>
+                    <div class="ethics-list" data-wow-delay="0.1s">
+                        <div class="ethics-item">
+                            <div class="ethics-number">1</div>
+                            <p class="ethics-text">All submitted papers are subject to double-blind review process by at least 3 international reviewers that are experts in the area of the paper.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">2</div>
+                            <p class="ethics-text">The factors that are taken into account in review are relevance, significance, originality, readability and language.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">3</div>
+                            <p class="ethics-text">The possible decisions include acceptance or rejection. Rejected articles will not be re-reviewed.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">4</div>
+                            <p class="ethics-text">Articles may be rejected without review if they are obviously not suitable for publication.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">5</div>
+                            <p class="ethics-text">The paper acceptance is constrained by such legal requirements as shall then be in force regarding libel, copyright infringement and plagiarism.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">6</div>
+                            <p class="ethics-text">The reviewers evaluate manuscripts for their intellectual content without regard to race, gender, sexual orientation, religious belief, ethnic origin, citizenship, or political philosophy of the authors.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">7</div>
+                            <p class="ethics-text">The staff must not disclose any information about a submitted manuscript to anyone other than the corresponding author, reviewers, other editorial advisers, and the publisher, as appropriate.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">8</div>
+                            <p class="ethics-text">Reviews should be conducted objectively. Personal criticism of the author is inappropriate. Referees should express their views clearly with supporting arguments.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">9</div>
+                            <p class="ethics-text">Reviewers are selected from different countries to evaluate the manuscript, while avoiding conflicts of interest between authors and reviewers.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">10</div>
+                            <p class="ethics-text">The author can suggest a list of scholars not to be submitted for review.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">11</div>
+                            <p class="ethics-text">Manuscripts received for review are treated as confidential documents and are reviewed by anonymous staff.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">12</div>
+                            <p class="ethics-text">A reviewer should call to the publisher's attention any substantial similarity or overlap between the manuscript under consideration and any other published paper of which they have personal knowledge.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">13</div>
+                            <p class="ethics-text">A Paper should contain sufficient detail and references to permit others to replicate the work. Fraudulent or knowingly inaccurate statements constitute unethical behavior and are unacceptable.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">14</div>
+                            <p class="ethics-text">The authors should ensure that they have written entirely original works, and if they have used the work and/or words of others, it must be appropriately cited or quoted.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">15</div>
+                            <p class="ethics-text">Submitting the same manuscript to more than one publication concurrently constitutes unethical publishing behavior and is unacceptable.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">16</div>
+                            <p class="ethics-text">Authorship should be limited to those who have made a significant contribution to the conception, design, execution, or interpretation of the reported work.</p>
+                        </div>
+
+                        <div class="ethics-item">
+                            <div class="ethics-number">17</div>
+                            <p class="ethics-text">All sources of financial support for the project should be disclosed.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item wow fadeInUp">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Secretary Email</h4>
+                            <p>littledune@ieti.net</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="contact-icon">
+                            <i class="fa fa-paper-plane-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Submission Link</h4>
+                            <p><a href="https://www.conftool.com/isbdai2026/" target="_blank">Conftool Portal</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Conference Website</h4>
+                            <p><a href="https://www.ieti.net/conf/isbdai/index.html" target="_blank">ieti.net/conf/isbdai</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="background: #0f1724; padding: 40px 0;">
+        <div class="container">
+            <div class="copyright" style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                &copy; Copyright <strong style="color: #c9a962;">ISBDAI</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="libinfo/jquery/jquery.min.js"></script>
+    <script src="libinfo/jquery/jquery-migrate.min.js"></script>
+    <script src="libinfo/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libinfo/easing/easing.min.js"></script>
+    <script src="libinfo/mobile-nav/mobile-nav.js"></script>
+    <script src="libinfo/wow/wow.min.js"></script>
+    <script src="libinfo/waypoints/waypoints.min.js"></script>
+    <script src="libinfo/counterup/counterup.min.js"></script>
+    <script src="libinfo/owlcarousel/owl.carousel.min.js"></script>
+    <script src="libinfo/isotope/isotope.pkgd.min.js"></script>
+    <script src="libinfo/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

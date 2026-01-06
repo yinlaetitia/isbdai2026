@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Venue Information - ISBDAI 2026</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="2026 5th International Symposium on Big Data and Artificial Intelligence: For Education Transformation (2026 ISBDAI)" name="keywords">
+    <meta content="Venue information for ISBDAI 2026 at The Hong Kong Polytechnic University" name="description">
+
+    <!-- Favicons -->
+    <link href="img/page/favicon.ico" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="libinfo/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="libinfo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libinfo/animate0/animate.min.css" rel="stylesheet">
+    <link href="libinfo/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="libinfo/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="libinfo/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Venue Card */
+        .venue-card {
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(15, 23, 36, 0.08);
+            overflow: hidden;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .venue-header {
+            background: linear-gradient(135deg, #0f1724 0%, #1a2634 100%);
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .venue-header::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .venue-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #c9a962 0%, #e8d5a3 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .venue-icon i {
+            font-size: 2.5rem;
+            color: #0f1724;
+        }
+
+        .venue-header h2 {
+            color: #fff;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .venue-header .year-badge {
+            display: inline-block;
+            background: rgba(201, 169, 98, 0.2);
+            color: #c9a962;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            margin-top: 1rem;
+        }
+
+        .venue-body {
+            padding: 3rem;
+        }
+
+        .venue-info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .venue-info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .venue-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .venue-info-item .info-icon {
+            width: 50px;
+            height: 50px;
+            background: #f8f9fb;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .venue-info-item .info-icon i {
+            font-size: 1.25rem;
+            color: #c9a962;
+        }
+
+        .venue-info-item .info-content h4 {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #8a9aaa;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+        }
+
+        .venue-info-item .info-content p {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #0f1724;
+            margin: 0;
+        }
+
+        .venue-description {
+            background: #f8f9fb;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .venue-description h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0f1724;
+            margin-bottom: 1rem;
+        }
+
+        .venue-description p {
+            color: #5a6a7a;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* Map Placeholder */
+        .map-section {
+            background: #f0f2f5;
+            border-radius: 16px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            overflow: hidden;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .map-placeholder {
+            text-align: center;
+            color: #8a9aaa;
+        }
+
+        .map-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #c9a962;
+        }
+
+        /* Coming Soon Badge */
+        .coming-soon {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(201, 169, 98, 0.15);
+            color: #c9a962;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .coming-soon i {
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header - Conference Style Navigation -->
+    <header id="header" class="header-scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/page/logo.png" alt="ISBDAI Logo" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down">
+                        <a href="#">Calls</a>
+                        <ul>
+                            <li><a href="cfp.html">Call for Papers</a></li>
+                            <li><a href="cfw.html">Call for Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#">Program</a>
+                        <ul>
+                            <li><a href="cp.html">Conference Program</a></li>
+                            <li><a href="keynotes.html">Keynotes</a></li>
+                            <li><a href="Workshops.html">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sr.html">Submission</a></li>
+                    <li><a href="vi.html">Venue</a></li>
+                    <li><a href="committees.html">Organization Committees</a></li>
+                    <li class="drop-down">
+                        <a href="#">History</a>
+                        <ul>
+                            <li><a href="history.html">ISBDAI History</a></li>
+                            <li><a href="bpa.html">Best Paper Awards</a></li>
+                            <li><a href="past-keynotes.html">Past Keynotes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cu.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!--==========================
+          Page Header with Image Carousel
+        ============================-->
+        <div class="page-header">
+            <div class="page-header-carousel">
+                <div class="page-header-slide active" style="background-image: url('img/page/polyu.jpg');"></div>
+                <div class="page-header-slide" style="background-image: url('img/page/polyu2.jpg');"></div>
+                <div class="page-header-slide" style="background-image: url('img/page/polyu3.jpg');"></div>
+                <div class="page-header-overlay"></div>
+            </div>
+            <div class="container">
+                <h1 class="page-title wow fadeInUp">Venue Information</h1>
+                <p class="page-subtitle wow fadeInUp" data-wow-delay="0.1s">Join us in Hong Kong for ISBDAI 2026</p>
+            </div>
+        </div>
+
+        <!--==========================
+          Venue Section
+        ============================-->
+        <section style="padding: 80px 0;">
+            <div class="container">
+
+                <div class="venue-card wow fadeInUp">
+                    <div class="venue-header">
+                        <div class="venue-icon">
+                            <i class="fa fa-university"></i>
+                        </div>
+                        <h2>The Hong Kong Polytechnic University</h2>
+                        <span class="year-badge">ISBDAI 2026</span>
+                    </div>
+
+                    <div class="venue-body">
+                        <div class="venue-info-grid">
+                            <div class="venue-info-item">
+                                <div class="info-icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Location</h4>
+                                    <p>Hung Hom, Kowloon, Hong Kong</p>
+                                </div>
+                            </div>
+
+                            <div class="venue-info-item">
+                                <div class="info-icon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Date</h4>
+                                    <p>2026 (Exact dates TBA)</p>
+                                </div>
+                            </div>
+
+                            <div class="venue-info-item">
+                                <div class="info-icon">
+                                    <i class="fa fa-subway"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Transportation</h4>
+                                    <p>MTR Hung Hom Station (Exit A1)</p>
+                                </div>
+                            </div>
+
+                            <div class="venue-info-item">
+                                <div class="info-icon">
+                                    <i class="fa fa-plane"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Nearest Airport</h4>
+                                    <p>Hong Kong International Airport</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="venue-description">
+                            <h4>About the Venue</h4>
+                            <p>The Hong Kong Polytechnic University (PolyU) is a public research university located in Hung Hom, Hong Kong. Founded in 1937, PolyU is one of the most prestigious universities in Hong Kong and is recognized internationally for its excellence in research and teaching. The university's modern campus provides an ideal setting for academic conferences, offering state-of-the-art facilities and easy accessibility from Hong Kong's major transportation hubs.</p>
+                        </div>
+
+                        <div class="map-section">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0878193686387!2d114.17708967608846!3d22.30329427967085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400e2f9d0d8e7%3A0x4d5f2a7a3a6d1b1c!2sThe%20Hong%20Kong%20Polytechnic%20University!5e0!3m2!1sen!2shk!4v1699999999999!5m2!1sen!2shk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div style="text-align: center; margin-top: 2rem;">
+                            <span class="coming-soon">
+                                <i class="fa fa-clock-o"></i>
+                                Detailed venue and accommodation information coming soon
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item wow fadeInUp">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Secretary Email</h4>
+                            <p>littledune@ieti.net</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="contact-icon">
+                            <i class="fa fa-paper-plane-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Submission Link</h4>
+                            <p><a href="https://www.conftool.com/isbdai2026/" target="_blank">Conftool Portal</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Conference Website</h4>
+                            <p><a href="https://www.ieti.net/conf/isbdai/index.html" target="_blank">ieti.net/conf/isbdai</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="background: #0f1724; padding: 40px 0;">
+        <div class="container">
+            <div class="copyright" style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                &copy; Copyright <strong style="color: #c9a962;">ISBDAI</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="libinfo/jquery/jquery.min.js"></script>
+    <script src="libinfo/jquery/jquery-migrate.min.js"></script>
+    <script src="libinfo/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libinfo/easing/easing.min.js"></script>
+    <script src="libinfo/mobile-nav/mobile-nav.js"></script>
+    <script src="libinfo/wow/wow.min.js"></script>
+    <script src="libinfo/waypoints/waypoints.min.js"></script>
+    <script src="libinfo/counterup/counterup.min.js"></script>
+    <script src="libinfo/owlcarousel/owl.carousel.min.js"></script>
+    <script src="libinfo/isotope/isotope.pkgd.min.js"></script>
+    <script src="libinfo/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

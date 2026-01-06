@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Workshops | ISBDAI 2026</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ISBDAI Workshops, Digital Economy, Fintech" name="keywords">
+    <meta content="Workshops and special sessions at ISBDAI 2026" name="description">
+
+    <!-- Favicons -->
+    <link href="img/page/favicon.ico" rel="icon">
+    <link href="img/page/favicon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="libinfo/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="libinfo/animate0/animate.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .workshops-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--space-xl) 0;
+        }
+        .workshop-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-mid-gray);
+            border-radius: var(--radius-lg);
+            padding: var(--space-2xl);
+            margin-bottom: var(--space-xl);
+            text-align: left;
+            transition: all var(--transition-base);
+        }
+        .workshop-card:hover {
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-accent);
+        }
+        .workshop-title {
+            font-size: var(--text-xl);
+            font-weight: 700;
+            color: var(--color-text-dark);
+            margin-bottom: var(--space-sm);
+            line-height: 1.3;
+        }
+        .workshop-organizers {
+            font-style: italic;
+            color: var(--color-text);
+            margin-bottom: var(--space-lg);
+            font-size: var(--text-base);
+        }
+        .workshop-organizers span {
+            font-style: normal;
+        }
+        .workshop-desc {
+            font-size: var(--text-base);
+            color: var(--color-text);
+            line-height: var(--leading-relaxed);
+            margin-bottom: var(--space-lg);
+            text-align: justify;
+        }
+        .workshop-btn {
+            display: inline-block;
+            padding: var(--space-sm) var(--space-lg);
+            border: 1px solid var(--color-text-dark);
+            border-radius: var(--radius-sm);
+            color: var(--color-text-dark);
+            text-decoration: none;
+            font-size: var(--text-sm);
+            font-weight: 500;
+            transition: all var(--transition-base);
+            background: transparent;
+            margin-bottom: var(--space-lg);
+        }
+        .workshop-btn:hover {
+            background: var(--color-text-dark);
+            color: var(--color-white);
+        }
+        .workshop-contact {
+            font-size: var(--text-sm);
+            color: var(--color-text);
+        }
+        .workshop-contact a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+        .workshop-contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header - Conference Style Navigation -->
+    <header id="header" class="header-scrolled">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/page/logo.png" alt="ISBDAI Logo" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="drop-down">
+                        <a href="#">Calls</a>
+                        <ul>
+                            <li><a href="cfp.html">Call for Papers</a></li>
+                            <li><a href="cfw.html">Call for Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#">Program</a>
+                        <ul>
+                            <li><a href="cp.html">Conference Program</a></li>
+                            <li><a href="keynotes.html">Keynotes</a></li>
+                            <li><a href="Workshops.html">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sr.html">Submission</a></li>
+                    <li><a href="vi.html">Venue</a></li>
+                    <li><a href="committees.html">Organization Committees</a></li>
+                    <li class="drop-down">
+                        <a href="#">History</a>
+                        <ul>
+                            <li><a href="history.html">ISBDAI History</a></li>
+                            <li><a href="bpa.html">Best Paper Awards</a></li>
+                            <li><a href="past-keynotes.html">Past Keynotes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cu.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header with Image Carousel -->
+    <div class="page-header">
+        <div class="page-header-carousel">
+            <div class="page-header-slide active" style="background-image: url('img/page/polyu.jpg');"></div>
+            <div class="page-header-slide" style="background-image: url('img/page/polyu2.jpg');"></div>
+            <div class="page-header-slide" style="background-image: url('img/page/polyu3.jpg');"></div>
+            <div class="page-header-overlay"></div>
+        </div>
+        <div class="container">
+            <h1 class="page-title">Workshops</h1>
+            <p class="page-subtitle">Special sessions and focused discussions</p>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="page-content">
+            <div class="container">
+                <div class="workshops-container">
+                    <!-- Workshop 1 -->
+                    <div class="workshop-card wow fadeInUp">
+                        <h3 class="workshop-title">International Workshop on Digital Economy and Fintech</h3>
+                        <p class="workshop-organizers"><span>Organized by:</span> Dr. John Smith, Dr. Sarah Chen, and Prof. Michael Wang</p>
+                        <p class="workshop-desc">
+                            Join us for an in-depth exploration of the intersection between digital economy innovations and financial technology advancements. This workshop brings together researchers, practitioners, and industry experts to discuss the latest trends and challenges in blockchain technology, cryptocurrency markets, digital payment systems, and AI-driven financial services. The main objective is to share cutting-edge research and foster collaboration between academia and industry to address emerging challenges in the fintech ecosystem.
+                        </p>
+                        <a href="index.html" target="_blank" class="workshop-btn">Visit Homepage</a>
+                        <p class="workshop-contact">Contact: <a href="mailto:littledune@ieti.net">littledune@ieti.net</a></p>
+                    </div>
+
+                    <!-- Workshop 2 -->
+                    <div class="workshop-card wow fadeInUp" data-wow-delay="0.1s">
+                        <h3 class="workshop-title">International Workshop on AI-Driven Business Intelligence and Analytics</h3>
+                        <p class="workshop-organizers"><span>Organized by:</span> Prof. Emily Davis, Dr. Robert Lee, and Dr. Anna Martinez</p>
+                        <p class="workshop-desc">
+                            This workshop explores the transformative impact of artificial intelligence on business intelligence and data analytics. We aim to bring together researchers and practitioners to discuss novel AI techniques for extracting actionable insights from complex business data. Topics include machine learning for predictive analytics, natural language processing for customer intelligence, deep learning for market trend analysis, and automated decision-making systems. The workshop provides a platform for sharing innovative solutions and best practices in AI-driven business applications.
+                        </p>
+                        <a href="index.html" target="_blank" class="workshop-btn">Visit Homepage</a>
+                        <p class="workshop-contact">Contact: <a href="mailto:isbdai2026@ieti.net">isbdai2026@ieti.net</a></p>
+                    </div>
+
+                    <!-- Workshop 3 -->
+                    <div class="workshop-card wow fadeInUp" data-wow-delay="0.2s">
+                        <h3 class="workshop-title">International Workshop on Smart Cities and Sustainable Development</h3>
+                        <p class="workshop-organizers"><span>Organized by:</span> Dr. James Wilson, Prof. Lisa Zhang, and Dr. David Brown</p>
+                        <p class="workshop-desc">
+                            This workshop focuses on the intersection of big data, artificial intelligence, and sustainable urban development. We explore how emerging technologies can be leveraged to create smarter, more sustainable cities. Topics of interest include IoT-based urban monitoring, AI for traffic optimization, energy-efficient building systems, data-driven urban planning, and citizen engagement platforms. The workshop aims to foster interdisciplinary collaboration and promote the exchange of innovative ideas for building resilient and sustainable urban environments.
+                        </p>
+                        <a href="index.html" target="_blank" class="workshop-btn">Visit Homepage</a>
+                        <p class="workshop-contact">Contact: <a href="mailto:smartcities@ieti.net">smartcities@ieti.net</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item wow fadeInUp">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Secretary Email</h4>
+                            <p>littledune@ieti.net</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="contact-icon">
+                            <i class="fa fa-paper-plane-o"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Submission Link</h4>
+                            <p><a href="https://www.conftool.com/isbdai2026/" target="_blank">Conftool Portal</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Conference Website</h4>
+                            <p><a href="https://www.ieti.net/conf/isbdai/index.html" target="_blank">ieti.net/conf/isbdai</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" style="background: #0f1724; padding: 40px 0;">
+        <div class="container">
+            <div class="copyright" style="text-align: center; color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                &copy; Copyright <strong style="color: #c9a962;">ISBDAI</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="libinfo/jquery/jquery.min.js"></script>
+    <script src="libinfo/jquery/jquery-migrate.min.js"></script>
+    <script src="libinfo/easing/easing.min.js"></script>
+    <script src="libinfo/mobile-nav/mobile-nav.js"></script>
+    <script src="libinfo/wow/wow.min.js"></script>
+    <script src="libinfo/waypoints/waypoints.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
