@@ -107,39 +107,10 @@
 
   // ==========================================
   // Mobile Navigation
+  // Note: Mobile nav toggle and dropdown handling is done in mobile-nav.js
+  // This section only handles keyboard accessibility
   // ==========================================
   var body = $('body');
-  var mobileNavToggle = $('.mobile-nav-toggle');
-
-  // Create mobile navigation clone
-  if ($('.mobile-nav').length === 0 && $('.main-nav').length) {
-    var mobileNav = $('<nav class="mobile-nav"></nav>');
-    mobileNav.append($('.main-nav ul').clone());
-    body.append(mobileNav);
-    body.append('<div class="mobile-nav-overly"></div>');
-  }
-
-  // Toggle mobile navigation
-  mobileNavToggle.on('click', function(e) {
-    e.preventDefault();
-    body.toggleClass('mobile-nav-active');
-    $(this).find('i').toggleClass('fa-bars fa-times');
-    $('.mobile-nav-overly').fadeToggle(300);
-  });
-
-  // Close on overlay click
-  $(document).on('click', '.mobile-nav-overly', function() {
-    body.removeClass('mobile-nav-active');
-    mobileNavToggle.find('i').removeClass('fa-times').addClass('fa-bars');
-    $(this).fadeOut(300);
-  });
-
-  // Handle dropdowns in mobile nav
-  $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
-    e.preventDefault();
-    $(this).parent().toggleClass('active');
-    $(this).siblings('ul').slideToggle(300);
-  });
 
   // ==========================================
   // WOW.js Initialization
@@ -305,7 +276,7 @@
   $(document).on('keydown', function(e) {
     if (e.key === 'Escape' && body.hasClass('mobile-nav-active')) {
       body.removeClass('mobile-nav-active');
-      mobileNavToggle.find('i').removeClass('fa-times').addClass('fa-bars');
+      $('.mobile-nav-toggle i').removeClass('fa-times').addClass('fa-bars');
       $('.mobile-nav-overly').fadeOut(300);
     }
   });
